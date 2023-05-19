@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main {
+  padding-top: 10%;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  width: 300px;
+  height: 450px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "result-screen result-screen result-screen result-screen" "correction-button correction-button back-button division-button" "seven-button eight-button nine-button multiplication-button" "four-button five-button six-button substraction-button" "one-button two-button three-button addition-button" "zero-button zero-button zero-button equal-button";
+  -moz-column-gap: 0;
+       column-gap: 0;
+  row-gap: 0;
+}
+
+.display-result {
+  grid-area: result-screen;
+  background-color: #000000;
+  margin: 0;
+}
+
+.correction-button {
+  grid-area: correction-button;
+}
+
+.back-button {
+  grid-area: back-button;
+}
+
+.nine-button {
+  grid-area: nine-button;
+}
+
+.eight-button {
+  grid-area: eight-button;
+}
+
+.seven-button {
+  grid-area: seven-button;
+}
+
+.six-button {
+  grid-area: six-button;
+}
+
+.five-button {
+  grid-area: five-button;
+}
+
+.four-button {
+  grid-area: four-button;
+}
+
+.three-button {
+  grid-area: three-button;
+}
+
+.two-button {
+  grid-area: two-button;
+}
+
+.one-button {
+  grid-area: one-button;
+}
+
+.zero-button {
+  grid-area: zero-button;
+}
+
+.division-button {
+  grid-area: division-button;
+}
+
+.multiplication-button {
+  grid-area: multiplication-button;
+}
+
+.substraction-button {
+  grid-area: substraction-button;
+}
+
+.addition-button {
+  grid-area: addition-button;
+}
+
+.equal-button {
+  grid-area: equal-button;
+}
+
+button {
+  border-style: none;
+  border: 1px solid #000000;
+}
+
+.grey-button {
+  color: #000000;
+  background-color: #D8D9DB;
+  font-size: xx-large;
+}
+
+.grey-button:hover {
+  background-color: #EBEBEB;
+}
+
+.grey-button:active {
+  background-color: #B4B5B6;
+}
+
+.orange-button {
+  color: #ffffff;
+  background-color: #E09748;
+  font-size: xx-large;
+}
+
+.orange-button:hover {
+  background-color: #DFB07E;
+}
+
+.orange-button:active {
+  background-color: #D88127;
+}
